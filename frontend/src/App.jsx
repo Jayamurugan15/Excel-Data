@@ -24,6 +24,7 @@ const App = () => {
         <Route path='/dashboard' element={<DashboardLayout/>}>
           <Route index element={<Profile/>}/>
           <Route path='/dashboard/visual' element={<Visual/>}/>
+          <Route path='/dashboard/Email-verify' element={<Emailverify/>}/>
         </Route>
         <Route path='/reset-password' element={<ResetPassword/>}/>
       </Routes>
