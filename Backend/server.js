@@ -6,6 +6,7 @@ const cors = require('cors');
 const connectDB  = require('./config/Mongodb.js');
 const authRoutes =  require('./Routes/authRoutes.js');
 const router = require('./routes/fileUpload.js');
+
 dotenv.config();
 
 const app = express();

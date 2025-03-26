@@ -9,10 +9,11 @@ export const Header = () => {
 
   return (
     <div className='flex flex-col items-center mt-20 text-center text-gray-800'>
-        <h1 className='flex items-center gap-2 text-xl sm:text-3xl font-medium mb-2'>Hey Developer 
+        <h1 className='flex items-center gap-2 text-xl sm:text-3xl font-medium mb-2'>Hey 
             <img className='w-8 aspect-square' src={asset.wave} alt="" />
         </h1>
         <h2 className='text-3xl sm:text-5xl font-semibold mb-4'>Welcome to our app</h2>
+        <p className=' text-xl mb-8 max-w-md'>Get your Excel data Visualized </p>
         <p className=' text-xl mb-8 max-w-md'>Let's start by Sign Up</p>
         <button
         onClick={()=>navigate("/signup")} 

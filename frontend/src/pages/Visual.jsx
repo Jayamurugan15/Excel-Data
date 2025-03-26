@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import FileUpload from '../components/FileUpload.jsx';
 import ChartDisplay from '../components/ChartDisplay.jsx';
 
-const App= () => {
+const Visual= () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [fileData, setFileData] = useState(null);
   const [uploadSuccess, setUploadSuccess] = useState(false);
@@ -60,4 +60,4 @@ const App= () => {
   );
 }
 
-export default App;
+export default Visual;

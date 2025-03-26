@@ -4,7 +4,7 @@ import { Appcontent } from '../context/AppContext';
 import { useContext } from 'react';
 
 
-function FileUpload({ onUploadSuccess, onFileDataLoaded }) {
+const FileUpload = ({ onUploadSuccess, onFileDataLoaded }) => {
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState('');
   const fileInputRef = useRef(null);
@@ -16,7 +16,6 @@ function FileUpload({ onUploadSuccess, onFileDataLoaded }) {
     if (!selectedFile) return;
     
     setFile(selectedFile);
-    setMessage('');
   };
 
   const handleUpload = async (e) => {
